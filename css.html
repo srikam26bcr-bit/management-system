@@ -1,0 +1,152 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background: #1d4ed8;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.form-section,
+.list-section {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000010;
+    min-width: 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #1d4ed8;
+}
+
+label {
+    display: block;
+    margin: 13px 0 6px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    background: white;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+button {
+    padding: 10px 13px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#submitBtn {
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.cancel {
+    background: #64748b;
+    width: 100%;
+}
+
+#search {
+    margin-bottom: 12px;
+}
+
+#studentCount {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.edit-btn {
+    background: #059669;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    background: #dc2626;
+}
+
+#emptyMessage {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 850px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
